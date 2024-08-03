@@ -6,6 +6,7 @@ function Home() {
             <MainSection>
                 <ContainerDivs>
             <div className='flex-content'>
+            <button className='commit-template'><a href="/commit">Click here for a commit template</a></button>
                 <div className='global-div'>
                     <div className='cards-commands'>
                         <h1>History</h1>
@@ -75,44 +76,45 @@ function Home() {
                         <p className='description'>Delete a branch on remote</p>
                         <p className='command'>git branch -dh "remote/branch"</p>
                         <p className='description'>Publish your tags</p>
-                        <p className='command'>git push --tags</p>                                               
+                        <p className='command'>git push --tags</p>  
+                                                                     
                     </div>
 
 
                     <div className='cards-commands'>
-                        <h1>Local Changes</h1>
+                        <h1>Undo</h1>
                         
-                        <p className='description'>Changed files in your working directory</p>
-                        <p className='command'>git status</p>                        
-                        <p className='description'>Changes to tracked files</p>
-                        <p className='command'>git diff</p>
-                        <p className='description'>Add all current changes to the next commit</p>
-                        <p className='command'>git add .</p>
-                        <p className='description'>Add some changes to the file for the next commit</p>
-                        <p className='command'>git add . -p file</p>
-                        <p className='description'>Commit all local changes to tracked files</p>
-                        <p className='command'>git commit -a</p>
-                        <p className='description'>Confirm previously prepared changes</p>
-                        <p className='command'>git commit</p>
-                        <p className='description'>Change the last commit</p>
-                        <p className='command'>git commit --amend</p>
+                        <p className='description'>Delete all local changes to your working directory</p>
+                        <p className='command'>git reset -hard HEAD</p>                        
+                        <p className='description'>Discard all local changes to a specific file</p>
+                        <p className='command'>git checkout HEAD "file"</p>
+                        <p className='description'>Reverting a commit (creating a new commit with opposite changes)</p>
+                        <p className='command'>git revert "commit"</p>
+                        <p className='description'>Reset the HEAD pointer to a previous commit and discard all changes since then</p>
+                        <p className='command'>git reset -hard "commit"</p>
+                        <p className='description'>Preserves all changes as unplanned changes</p>
+                        <p className='command'>git reset "commit"</p>
+                        <p className='description'>Preserves uncommitted local changes</p>
+                        <p className='command'>git reset -keep "commit"</p>
+                        
                     </div>
 
                     <div className='cards-commands'>
-                        <h1>Branches</h1>
+                        <h1>Merge and Rebase</h1>
                         
-                        <p className='description'>Changed files in your working directory</p>
-                        <p className='command'>git branch -av</p>                        
-                        <p className='description'>Changes to tracked files</p>
-                        <p className='command'>git checkout "branch"</p>
-                        <p className='description'>Add all current changes to the next commit</p>
-                        <p className='command'>git checkout "new-branch"</p>
-                        <p className='description'>Add some changes to the file for the next commit</p>
-                        <p className='command'>git checkout--track "remote/branch"</p>
-                        <p className='description'>Commit all local changes to tracked files</p>
-                        <p className='command'>git branch -d "branch"</p>
-                        <p className='description'>Confirm previously prepared changes</p>
-                        <p className='command'>git tag "tag-name"</p>
+                        <p className='description'>Merge "branch" in your atual HEAD</p>
+                        <p className='command'>git merge "branch"</p>                        
+                        <p className='description'>Rebase your atual HEAD in "branch"</p>
+                        <p className='command'>git rebase "branch"</p>
+                        <p className='description'>Abort one rebase</p>
+                        <p className='command'>git rebase --abort</p>
+                        <p className='description'>Continue one rebase after resolve conflicts</p>
+                        <p className='command'>git rebase --continue</p>
+                        <p className='description'>Use a tool tour configured merge to resolve conflicts</p>
+                        <p className='command'>git mergetool</p>
+                        <p className='description'>Use the tour editor to manually resolve conflicts and (after resolving) mark the file as resolved</p>
+                        <p className='command'>git add "resolved-file"</p>
+                        <p className='command'>git tag "resolved-file"</p>
                     </div>
                 </div>
             </div>
