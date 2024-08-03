@@ -20,5 +20,12 @@ git clone https://github.com/imneli/learn-git.git
 cd learn-git
 ```
 
+### Install the dependencies & run
+
+```bash
+npm i
+npm run dev
+```
+
 ### Usage
 Follow the step-by-step instructions in the provided materials to learn the basic Git commands. Each section includes practical exercises to help you understand the concepts better.
