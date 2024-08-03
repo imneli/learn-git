@@ -1,10 +1,9 @@
-import { } from './style'
-// import { Link } from 'react-router-dom';
+import { TagH1Footer } from './style'
 
 function Footer() {
     return(
         <>
-            <h1>footer</h1>
+            <TagH1Footer>made with ❤️ by <a href="https://github.com/imneli">imneli</a></TagH1Footer>
         </>
     )
 }

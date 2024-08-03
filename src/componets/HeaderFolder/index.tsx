@@ -1,7 +1,13 @@
+import { HeaderContainer, Nav, NavLink } from './style'
+
 function Header() {
     return(
         <>
-            <h1>omg im a header!! hii</h1>
+            <HeaderContainer>
+                <Nav>
+                    <NavLink href="/" className='tag__nav'>Git Learn</NavLink>
+                </Nav>
+            </HeaderContainer>
         </>
     )
 }
