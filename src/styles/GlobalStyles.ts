@@ -9,8 +9,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     ::selection {
-      color: #1e1e1e;
-      background-color: #88ED92
+      color: #fefefe;
+      background-color: #1e1e1e;
     }
     font-family: 'Poppins';
     background-color: #1e1e1e;

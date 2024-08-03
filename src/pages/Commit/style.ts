@@ -1,14 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const MainSection = styled.section`
-    background-color: #393E46;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-
-    .commit-template {
+export const SectionError = styled.div`
+ .commit-template {
         border: none;
         padding: 10px;
         border-radius: 8px;
@@ -16,10 +9,8 @@ export const MainSection = styled.section`
         color: #1e1e1e;
         cursor: pointer;
         font-weight: 700;
-    }
 
-    .commit-template > a {
-        color: #1e1e1e;
+        
     }
 
     .description {
@@ -44,27 +35,33 @@ export const MainSection = styled.section`
     }
 
     .cards-commands {
-        max-width: 360px;
+        max-width: 500px;
         flex-direction: column;
         background-color: #222831;
         padding: 2rem;
         border-radius: 1.5rem;
+
+        
 
         h1 {
             text-align: center;
             color: white;
             margin-bottom: 1rem;
         }
+
+
+        
     }
+
+        
+        
+
 
     .cards-commands:hover {
         transition: .3s;
         scale: 1.02;
     }
+
+
+    
 `
-
-export const ContainerDivs = styled.div`
-    display: flex;
-    gap: 1.5rem;
-    `
-
