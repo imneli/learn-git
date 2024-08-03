@@ -1,31 +1,24 @@
-# React + TypeScript + Vite
+## Learn Git
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
+Learn Git and the fundamental commands through practical examples and exercises.
 
-Currently, two official plugins are available:
+## Features
+- Step-by-step instructions on basic Git commands
+- Practical examples and exercises
+- Suitable for beginners
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Git installed on your machine. Download it from [here](https://git-scm.com/downloads).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Clone the Repository
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/imneli/learn-git.git
+cd learn-git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# learn-git
+### Usage
+Follow the step-by-step instructions in the provided materials to learn the basic Git commands. Each section includes practical exercises to help you understand the concepts better.
