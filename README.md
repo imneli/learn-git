@@ -1,5 +1,7 @@
 ## Learn Git
 
+<img src="./public/gitLearn.png">
+
 ## About
 Learn Git and the fundamental commands through practical examples and exercises.
 
