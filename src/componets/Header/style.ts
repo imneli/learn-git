@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
 
 `;
 
-export const Nav = styled.nav<{ open: boolean }>`
+export const Nav = styled.nav`
   display: flex;
   gap: 0rem;
   font-size: 14px;
